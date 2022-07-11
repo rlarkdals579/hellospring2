@@ -31,6 +31,7 @@ public class SingletonTest {
 
     @Test
     @DisplayName("싱글톤 패턴을 적용한 객체 사용")
+    // 참조 값이 같다.
     void singletonServiceTest() {
         SingletonService singletonService1 = SingletonService.getInstance();
         SingletonService singletonService2 = SingletonService.getInstance();
@@ -41,4 +42,5 @@ public class SingletonTest {
         assertThat(singletonService1).isSameAs(singletonService2);
 
     }
+
 }
